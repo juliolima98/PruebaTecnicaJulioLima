@@ -170,9 +170,8 @@
           data: bodyFormData,
           headers: {'Content-Type': 'multipart/form-data' },
       }).then((result) => {
-          //location.href = "<?php //echo base_url() ?>" + 'index.php/empleados/index';   
+          location.href = "<?php echo base_url() ?>" + 'index.php/empleados/index';   
           var data = JSON.parse(response);
-          //console.log(response);
           console.log('exito');
           
       }).catch(error => {
